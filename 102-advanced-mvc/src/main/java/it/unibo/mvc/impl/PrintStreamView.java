@@ -1,6 +1,8 @@
-package it.unibo.mvc;
+package it.unibo.mvc.impl;
 
 import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
+import it.unibo.mvc.api.DrawNumberView;
+import it.unibo.mvc.api.DrawNumberViewObserver;
 
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -59,6 +61,11 @@ public final class PrintStreamView implements DrawNumberView {
     @Override
     public void result(final DrawResult res) {
         out.println(res.getDescription());
+    }
+
+    @Override
+    public void displayError(String message) {
+        out.println(message);
     }
 
 }

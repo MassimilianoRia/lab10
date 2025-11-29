@@ -1,4 +1,4 @@
-package it.unibo.mvc;
+package it.unibo.mvc.impl;
 
 /**
  * Encapsulates the concept of configuration.

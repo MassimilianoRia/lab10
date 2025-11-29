@@ -1,6 +1,8 @@
-package it.unibo.mvc;
+package it.unibo.mvc.impl;
 
 import java.util.Random;
+
+import it.unibo.mvc.api.DrawNumber;
 
 /**
  * Implementation of DrawNumber.

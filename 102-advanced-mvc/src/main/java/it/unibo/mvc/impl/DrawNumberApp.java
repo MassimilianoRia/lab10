@@ -1,6 +1,9 @@
-package it.unibo.mvc;
+package it.unibo.mvc.impl;
 
 import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
+import it.unibo.mvc.api.DrawNumber;
+import it.unibo.mvc.api.DrawNumberView;
+import it.unibo.mvc.api.DrawNumberViewObserver;
 
 import java.io.FileNotFoundException;
 import java.util.Arrays;

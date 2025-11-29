@@ -1,4 +1,6 @@
-package it.unibo.mvc;
+package it.unibo.mvc.api;
+
+import it.unibo.mvc.impl.DrawResult;
 
 /**
  * View interface for the Draw Number game.
@@ -28,4 +30,11 @@ public interface DrawNumberView {
      * @param res the result of the last draw
      */
     void result(DrawResult res);
+
+    /**
+     * Informs the user about errors generated in the controller because I/O access.
+     *
+     * @param message the message to show
+     */
+    void displayError(String message);
 }
